@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { RootLayout } from "../layouts";
 import { CreatePage, DashboardPage, ProfilePage } from "../pages";
 import { TasksLoader } from "../pages/dashboard-page/dashboard-page";
+import { CreateAction } from "../pages/create-page/create-page";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       {
         path: "create",
         element: <CreatePage />,
+        action: CreateAction,
       },
       {
         path: "profile",
