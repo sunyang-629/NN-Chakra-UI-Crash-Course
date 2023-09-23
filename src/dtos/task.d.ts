@@ -3,5 +3,5 @@ interface ITaskDto {
   title: string;
   description: string;
   author: string;
-  image: string;
+  img: string;
 }

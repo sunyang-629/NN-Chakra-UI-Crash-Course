@@ -1,5 +1,6 @@
 import { EditIcon, ViewIcon } from "@chakra-ui/icons";
 import {
+  Avatar,
   Box,
   Button,
   Card,
@@ -25,8 +26,10 @@ const DashboardPage: React.FC = () => {
       {tasks.map((task) => (
         <Card key={task.id} borderTop="8px" borderColor="purple.400" bg="white">
           <CardHeader>
-            <Flex>
-              <Box w="50px" h="50px"></Box>
+            <Flex gap={5}>
+              <Box w="50px" h="50px">
+                <Avatar src={task.img} />
+              </Box>
               <Box>
                 <Heading as="h3" size="sm">
                   {task.title}
